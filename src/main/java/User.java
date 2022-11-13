@@ -3,25 +3,25 @@
 public class User {
     public static String userData(){
         return "  {\n" +
-                "    \"name\": \"Kurtis1 Weissnat111\",\n" +
-                "    \"username\": \"Elwyn.Skiles1\",\n" +
-                "    \"email\": \"Telly1.Hoeger@billy.biz\",\n" +
+                "    \"name\": \"Ivan Yatskovets\",\n" +
+                "    \"username\": \"ShadowSpace\",\n" +
+                "    \"email\": \"ivan.yackovec@gmail.com\",\n" +
                 "    \"address\": {\n" +
-                "      \"street\": \"Rex Trail\",\n" +
-                "      \"suite\": \"Suite 280\",\n" +
-                "      \"city\": \"Howemouth\",\n" +
-                "      \"zipcode\": \"58804-1099\",\n" +
+                "      \"street\": \"shyroka\",\n" +
+                "      \"suite\": \"Suite 41\",\n" +
+                "      \"city\": \"Lviv\",\n" +
+                "      \"zipcode\": \"79050\",\n" +
                 "      \"geo\": {\n" +
                 "        \"lat\": \"24.8918\",\n" +
                 "        \"lng\": \"21.8984\"\n" +
                 "      }\n" +
                 "    },\n" +
-                "    \"phone\": \"210.067.6132\",\n" +
-                "    \"website\": \"elvis.io\",\n" +
+                "    \"phone\": \"+380938246823\",\n" +
+                "    \"website\": \"silverwds.com\",\n" +
                 "    \"company\": {\n" +
-                "      \"name\": \"Johns Group\",\n" +
-                "      \"catchPhrase\": \"Configurable multimedia task-force\",\n" +
-                "      \"bs\": \"generate enterprise e-tailers\"\n" +
+                "      \"name\": \"Silver woods\",\n" +
+                "      \"catchPhrase\": \"We thinking about you\",\n" +
+                "      \"bs\": \"web studio\"\n" +
                 "    }\n" +
                 "  }";
     }
