@@ -1,3 +1,5 @@
+
+
 public class User {
     public static String userData(){
         return "  {\n" +
@@ -23,10 +25,11 @@ public class User {
                 "    }\n" +
                 "  }";
     }
+    private int id;
     private String name;
     private String username;
     private String email;
     private String address;
-    private String street;
+
 
 }
