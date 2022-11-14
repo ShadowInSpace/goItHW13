@@ -1,4 +1,5 @@
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import org.jsoup.Jsoup;
 
@@ -17,9 +18,11 @@ public class MainClass {
 
     private static final String urlUser = "https://jsonplaceholder.typicode.com/users";
     private static final String baseUrl = "https://jsonplaceholder.typicode.com";
-    private final static Gson gson = new Gson();
+    private final static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public static void createUser(String userData) throws IOException, InterruptedException {
+    public static void createUser(User user) throws IOException, InterruptedException {
+        String userData = gson.toJson(user);
+
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(urlUser))
                 .header("Content-Type", "application/json")
@@ -34,7 +37,8 @@ public class MainClass {
         System.out.println("response.body() = " + response.body());
     }
 
-    public static void updateUser(String userData, int userId) throws IOException, InterruptedException {
+    public static void updateUser(User user, int userId) throws IOException, InterruptedException {
+        String userData = gson.toJson(user);
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(urlUser + "/" + userId))
                 .header("Content-Type", "application/json")
